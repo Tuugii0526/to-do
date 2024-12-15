@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./project5MyselfDoToList.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Todo App</h2>
+    </header>
+    <main>
+        <div class="container">
+            
+            <button id="addNewTask">Add New Task</button>
+            <form id="new-task" class="hide new-task ">
+                <div class="formHeader">
+                    <button id="x-btn" type="button">X</button>
+                </div>
+                <label for="title">
+                    <p class="inputText">Title</p>
+                    <input required type="text" id="title" value="" >
+                </label>
+                <label for="date">
+                    <p class="inputText">Date</p>
+                    <input type="date" id="date">
+                </label>
+                <label for="description">
+                    <p class="inputText">Description</p>
+                    <textarea name="" id="description"></textarea>
+                </label>
+                <button id="addOrUpdateTask" type="submit">
+                    Add Task
+                </button>
+            </form>
+            <dialog id="close-or-discard-dialog" >
+                <p id="dialog-text">Discard unsaved changes?</p>
+                <form method="dialog" id="dialog-form">
+                    <button id="cancel-btn" type="button">Cancel</button>
+                    <button id="discard-btn">Discard</button>
+                </form>
+            </dialog>
+            <div id="tasks"></div>
+        </div>
+        
+    </main>
+</body>
+<script src="./project5MyselfDoToList.js"></script>
+</html>

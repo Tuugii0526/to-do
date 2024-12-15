@@ -1,0 +1,160 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(18, 5, 40);
+}
+header
+{
+    text-align: center;
+}
+h2
+{ 
+    margin-top: 10px;
+    color: #ffffff;
+}
+.container
+{
+    position:relative;
+    margin: 20px auto 0;
+width: 450px;
+height: 500px;
+border-radius: 10px;
+border: 5px solid rgb(255,200,0);
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #ffffff;
+
+}
+button#addNewTask ,button#addOrUpdateTask
+{
+    width: 60%;
+    margin: 20px 0;
+    height: 30px;
+    font-size: 20px;
+}
+button
+{  
+    padding: 0 4px;
+    border-radius: 5px;
+    border: 3px solid rgb(255,200,0);
+    background-color: hsl(50,50%,50%);
+
+}
+button:hover
+{
+    background-color: hsl(50,80%,60%);
+    border-color: rgba(255,190,0);
+    border-radius: 4px;
+}
+.new-task
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.hide
+{
+    display: none;
+}
+.formHeader
+{
+    position: relative;
+    width: 100%;
+    height: 15px;
+}
+label
+{
+    width: 100%;
+}
+#x-btn
+{   
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+   border: none;
+   background-color: transparent;
+   font-weight: 600;
+    color: rgba(0,200,0);
+}
+#x-btn:hover
+{
+    box-shadow:0 4px 2px 3px cyan;
+    text-shadow: 0 2px 3px black;
+}
+
+
+input,textarea
+{
+    display: block;
+    margin:10px 0 10px 5px;
+    width: 95%;
+    padding:3px 0 0 6px
+}
+
+
+input
+{
+    height: 30px;
+}
+.inputText
+
+{
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+dialog
+{  
+    border-color: rgb(255,200,0);
+    text-align: center;
+    margin:15px auto 0;
+    width:300px;
+    height: 80px;
+    border-radius: 10px;
+}
+#dialog-form
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#dialog-text
+{
+    font-weight: 400;
+    font-size: 20px;
+}
+#tasks
+{
+    position: relative;
+   
+    width: 90%;
+    height: 70%;
+    margin: 10px auto 0;
+    overflow: auto;
+}
+span
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+.task-container
+{
+margin :10px 0;
+}
+.task-container button
+{ 
+    width: 80px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
